@@ -9,6 +9,7 @@ describe('Muhit tekshiruvi (smoke)', () => {
 
     it('Settings ilovasi ochiladi va "About" bo\'limi topiladi', async () => {
         await SettingsPage.waitForOpen();
+        await driver.pause(2000); // Settings app to'liq yuklanishi uchun kut
         const about = await SettingsPage.scrollTo('About');
         await expect(about).toBeDisplayed();
     });

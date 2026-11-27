@@ -1,3 +1,7 @@
 node_modules/
 screenshots/
 *.log
+client-app-autotest/
+apps/
+reports/*
+!reports/known-bugs.md

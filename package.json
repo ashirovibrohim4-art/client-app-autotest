@@ -8,8 +8,17 @@
   },
   "scripts": {
     "test": "wdio run ./wdio.conf.js",
-    "test:smoke": "wdio run ./wdio.conf.js --spec ./test/specs/smoke.e2e.js",
-    "inspector": "appium --allow-cors"
+    "test:home": "wdio run ./wdio.conf.js --spec ./test/specs/04-home.e2e.js",
+    "test:account": "wdio run ./wdio.conf.js --spec ./test/specs/05-account.e2e.js",
+    "test:cart": "wdio run ./wdio.conf.js --spec ./test/specs/03-eats.e2e.js",
+    "test:orders": "wdio run ./wdio.conf.js --spec ./test/specs/06-orders.e2e.js",
+    "test:language": "wdio run ./wdio.conf.js --spec ./test/specs/07-language.e2e.js",
+    "test:delivery": "wdio run ./wdio.conf.js --spec ./test/specs/02-delivery.e2e.js",
+    "test:load": "wdio run ./wdio.conf.js --spec ./test/specs/02-delivery.e2e.js --mochaOpts.grep Yuklama",
+    "test:session":"wdio run ./wdio.conf.js --spec ./test/specs/08-session.e2e.js",
+    "inspector": "appium --allow-cors",
+    "test:full": "wdio run ./wdio.conf.js",
+    "test:manual": "wdio run ./wdio.conf.js --spec ./test/specs/02-delivery.e2e.js --mochaOpts.grep \"F2\\\\.\""
   },
   "keywords": [],
   "author": "",
